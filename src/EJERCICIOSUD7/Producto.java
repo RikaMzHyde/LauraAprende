@@ -1,3 +1,5 @@
+package EJERCICIOSUD7;
+
 //Ejercicio 1
 public abstract class Producto{
     protected double gasto;
