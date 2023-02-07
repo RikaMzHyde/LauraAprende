@@ -1,10 +1,11 @@
 package EJERCICIOSUD7.ej3;
 
-public class Animal {
+public abstract class Animal {
 
     protected String nombre;
 
-    public Animal(){
+    public Animal(String nombre){
+        this.nombre = nombre;
     }
 
     public String getNombre() {
@@ -14,9 +15,8 @@ public class Animal {
         this.nombre = nombre;
     }
 
-    public abstract void comer(String alimento, String nacer){
-        System.out.println("El " + this.nombre + " come " + alimento);
-    }
+    public abstract void comer(String alimento);
+    public abstract String nacer();
 }
 
 
